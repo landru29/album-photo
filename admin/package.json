@@ -1,0 +1,15 @@
+{
+  "name": "utils",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node ./add-user.js"
+  },
+  "dependencies": {
+    "mongodb": "*",
+    "monk": "*",
+    "prompt": "*",
+    "underscore.string": "*",
+    "MD5": "*"
+  }
+}

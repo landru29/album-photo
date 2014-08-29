@@ -1,0 +1,32 @@
+{
+	"process": {
+		"nb-forks": "2",
+		"binding-port": "3000"
+	},
+	"db": {
+		"disabled": true,
+		"host": "localhost",
+		"port": "27017",
+		"database": "translation"
+	},
+	"salt": "en route pour la joie",
+	"roles": {
+		"guest": "true",
+		"traducteur": ["guest"],
+		"admin": ["guest"]
+	},
+	"application": {
+		"default-context": "global"
+	},
+	"cors": [
+		"http://localhost:9000"
+	],
+	"resources": {
+		"user": {
+			"controller": "./resources/user",
+			"acl": {
+				"GET": "guest"
+			}
+		}
+	}
+}
